@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdmController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +25,6 @@ Route::get('/menu',function(){
 Route::get('/inscription',function(){
     return view ('inscription');
 });
-Route::get('/liste',function (){
-    return view('liste');
-}) ;
+Route::get('/liste',[AdmController::class,'index']);
+Route::post('/formulaire',[AdmController::class,'store']);
+

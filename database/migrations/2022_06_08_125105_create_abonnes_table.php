@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAdmsTable extends Migration
+class CreateAbonnesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class CreateAdmsTable extends Migration
      */
     public function up()
     {
-        Schema::create('adms', function (Blueprint $table) {
+        Schema::create('abonnes', function (Blueprint $table) {
             $table->id();
             $table->string('nom');
             $table->string('prenom');
             $table->string('date_de_naissance');
+            $table->string('date_ab');
             $table->string('numero_de_tel');
             $table->string('email');
             $table->timestamps();
@@ -31,6 +32,6 @@ class CreateAdmsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('adms');
+        Schema::dropIfExists('abonnes');
     }
 }

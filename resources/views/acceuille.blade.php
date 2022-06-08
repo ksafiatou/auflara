@@ -21,7 +21,7 @@
                     </div>
                     <div class="col-md-3 col-lg-4 ">
                         <div class="card bg-primary w-100 c2">
-                            <a href="liste">
+                            <a href="/liste">
                                 <img class="card-img-top" src="{{asset('img/liste.webp')}}" alt="Card image cap" >
                             <div class="card-body text-center text-light">
                                 <h5 class="card-title">GERER LES ABONNES</h5>

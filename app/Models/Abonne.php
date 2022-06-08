@@ -5,7 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class adm extends Model
+class Abonne extends Model
 {
     use HasFactory;
+    
 }

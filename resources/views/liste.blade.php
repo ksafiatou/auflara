@@ -35,29 +35,29 @@
                                 </tr>
                             </thead>
                             <tbody>
-                            
+                                    @foreach($abonnes as $abonne)
                                 
                                         <tr class='ligne'>
                                         <td class='pl-4 '>$i</td>
                                         <td>
-                                            <h5 class='font-medium mb-0'>$donnees[nom]   $donnees[prenom]</h5>
+                                            <h5 class='font-medium mb-0'>{{$abonne->nom}} {{$abonne->prenom}}</h5>
                                             <span class='text-muted'></span>
                                         </td>
                                         <td>
-                                            <span class='text-muted'>$donnees[date_naiss]</span><br>
+                                            <span class='text-muted'>{{$abonne->date_de_naissance}}</span><br>
                                             <span class='text-muted'></span>
                                         </td>
                                         <td>
-                                            <span class='text-muted'>$donnees[email]</span>
+                                            <span class='text-muted'>{{$abonne->email}}</span>
                                             <span class='text-muted'></span>
                                         </td>
                                         <td>
-                                            <span class='text-muted'>$donnees[numero]</span><br>
+                                            <span class='text-muted'>{{$abonne->numero_de_tel}}</span><br>
                                             <span class='text-muted'></span>
                                         </td>
                                         
                                             <td>
-                                                <span class='text-muted'>$donnees[debut_ab]</span><br>
+                                                <span class='text-muted'>{{$abonne->date_ab}}</span><br>
                                                 <span class='text-muted'></span>
                                             </td>
                                         
@@ -69,7 +69,7 @@
                                         </td>
                                         
                                         </tr>
-                                       
+                                       @endforeach
                             </tbody>
                             </table>
                         </div>
